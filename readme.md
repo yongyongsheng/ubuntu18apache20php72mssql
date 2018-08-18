@@ -21,8 +21,8 @@ Please refer to the Docker Hub repository for details.
 -------------
 
 ##### REQUIRED FILES:
-- Main dockerfile configuration (./Dockerfile & ./docker/vhost.conf & prod.env)
-- Development docker configuration (./docker-compose.yml & ./docker/dev.dockerfile)
+    - Main dockerfile configuration (./Dockerfile & ./docker/vhost.conf & prod.env)
+    - Development docker configuration (./docker-compose.yml & ./docker/dev.dockerfile)
 
 ##### How it works
 
