@@ -18,7 +18,7 @@ Please refer to the Docker Hub repository for details.
 4. Run: docker run -p 8181:80 dproject to start this project container
 5. Your container is ready on http://localhost:8181
 
-—
+-------------
 
 #### REQUIRED FILES:
 - Main dockerfile configuration (./Dockerfile & ./docker/vhost.conf & prod.env)
