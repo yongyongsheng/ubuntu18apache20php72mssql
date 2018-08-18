@@ -1,0 +1,13 @@
+version: '2'
+services:
+  ubuntuphpmssql:
+    build:
+      context: ./
+      dockerfile: docker/dev.dockerfile
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+    environment:
+      - “WMODE=DEVELOPMENT“
+    ports:
+      - 8080:80
