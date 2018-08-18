@@ -1,11 +1,19 @@
-#   LARAVEL WITH DOCKER 
+THIS FOLDER CONTAINS PRODUCTION & DEVELOPMENT CONFIGURATION FILE REQUIRED TO BUILD THE IMAGE.
 
-#### REQUIRED FILES:
-    - Laravel base project
-    - Main dockerfile configuration (./Dockerfile & ./docker/vhost.conf & prod.env)
+
+##### REQUIRED FILES:
+    - Main dockerfile configuration (./Dockerfile & ./docker/vhost.conf)
     - Development docker configuration (./docker-compose.yml & ./docker/dev.dockerfile)
 
-### DEVELOPMENT MODE:
+##### How it works
+
+1. Pull the pre-compiled image from Docker Hub.
+2. Continue building container according to content in Dockerfile.
+
+This project was build for Laravel connecting to MSSQL DB. The base image is provided here.
+This project was prepared with development mode with docker-compose. Any changes to Dockerfile should be applied to docker/dev.dockerfile or vice-versa.
+
+##### DEVELOPMENT MODE:
 
 This mode will allow you to run the docker container but reference the working directory to path on your computer.
 Any file changes will appear immediately in the test url.
@@ -22,7 +30,7 @@ You may need to run some of the Laravel php commands. To run them in the contain
      docker-compose exec [container_id] tail -100 /var/log/httpd/error_log
      docker-compose exec [container_id] php artisan optimize
 
-### PRODUCTION MODE:
+##### PRODUCTION MODE:
 
 This mode will build the docker image with the site files in the image as one package.
 This will be the final build (as what going to be build in the server).
