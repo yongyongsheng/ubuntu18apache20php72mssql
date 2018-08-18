@@ -10,7 +10,7 @@ This docker image is compiled with:
 Main utilities included: MSSQL, Git, Composer.
 Please refer to the Docker Hub repository for details.
 
-### How to use for beginner
+### Beginner's Guide
 
 1. Git clone this repository
 2. Start Docker on your machine
@@ -20,15 +20,17 @@ Please refer to the Docker Hub repository for details.
 
 -------------
 
-#### REQUIRED FILES:
+##### REQUIRED FILES:
 - Main dockerfile configuration (./Dockerfile & ./docker/vhost.conf & prod.env)
 - Development docker configuration (./docker-compose.yml & ./docker/dev.dockerfile)
 
-#### How it works
+##### How it works
 
-1. Pull the pre-compiled image from Docker Hub (ys87/ubuntu18apache20php72mssql).
-2. Continue building container as in Dockerfile
+1. Pull the pre-compiled image from Docker Hub.
+2. Continue building container according to content in Dockerfile.
 
+This project was build for Laravel connecting to MSSQL DB. The base image is provided here.
+This project was prepared with development mode with docker-compose. Any changes to Dockerfile should be applied to docker/dev.dockerfile or vice-versa.
 
 ##### DEVELOPMENT MODE:
 
