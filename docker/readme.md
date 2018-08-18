@@ -1,9 +1,9 @@
-THIS FOLDER CONTAINS PRODUCTION & DEVELOPMENT CONFIGURATION FILE REQUIRED TO BUILD THE IMAGE.
+    THIS FOLDER CONTAINS PRODUCTION & DEVELOPMENT CONFIGURATION FILE REQUIRED TO BUILD THE IMAGE.
 
 
 ##### REQUIRED FILES:
-    - Main dockerfile configuration (./Dockerfile & ./docker/vhost.conf)
-    - Development docker configuration (./docker-compose.yml & ./docker/dev.dockerfile)
+- Main dockerfile configuration (./Dockerfile & ./docker/vhost.conf)
+- Development docker configuration (./docker-compose.yml & ./docker/dev.dockerfile)
 
 ##### How it works
 
